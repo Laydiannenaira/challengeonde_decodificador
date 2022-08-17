@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <header>
+            <div class="logo">
+                <img src="img/Logo.png" alt="">
+            </div>
+        </header>
+        <main>
+            <section class="area_txt">
+                <div class="primaria">
+                    <div class="entrada">
+                        <textarea name="frase" id="entra" placeholder="Digite seu texto aqui"></textarea>
+                    </div>
+                    <div class="alerta">
+                        <p>&nbsp; Apenas letras minúsculas e sem acento.</p>
+                    </div>
+        
+                    <div class="botoes">
+                        <!-- <input type="button"> -->
+                        <button class="criptografar">Criptografar</button>
+                        <button class="descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+
+
+                <div class="saida" id="sai">
+                    <!-- <label for="mensagem">Mensagem</label> -->
+
+                    <!-- <textarea name="frase" id="sai" placeholder="Texto Criptografado"> 
+                    </textarea> -->
+                    <div class="aparece_primeiro">
+                        <div>
+                            <img src="img/boneco.png">
+                        </div>
+                        <h3>Nenhuma mensagem encontrada</h3>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
+                        
+                    <div class="aparece_resultado ocultar">
+                        <div class="texto">
+                            <p>Mensagem codificada:</p>
+                            <textarea class="txt_cript" name="frase" id="copy" placeholder="Texto Criptografado">
+
+                            </textarea>
+                            <!-- <p class="txt_cript" id="copy"></p> -->
+                        </div>
+                        <div class="btn_copiar">
+                            <button class="copiar">copiar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <script src="script.js"></script>
+
+
+
+        </main>
+
+
+    </div>
+    
+    <footer>
+        <p class="copyrigth">&copy; Desenvolvido por Laydianne Costa - 2022</p>
+    </footer>
+</body>
+</html>
